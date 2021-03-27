@@ -5,7 +5,7 @@ export const FAQSection = () => {
   return (
     <Container id="faq">
       <Box sx={{ bg: "grey", height: 200, mb: 4, width: "100%" }} />
-      <Grid columns={[2]}>
+      <Grid sx={{ gridTemplateColumns: ["1fr", "1fr 1fr"] }}>
         <Container>
           <Container sx={{ mb: 4 }}>
             <Text variant="styles.h5">How do you do it?</Text>

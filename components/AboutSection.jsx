@@ -3,7 +3,10 @@ import React from "react";
 
 export const AboutSection = () => {
   return (
-    <Grid id="about" sx={{ mb: 6 }} columns={[3]}>
+    <Grid
+      id="about"
+      sx={{ gridTemplateColumns: ["1fr", "1fr 1fr 1fr"], mb: 6 }}
+    >
       <Container>
         <Box sx={{ bg: "grey", height: 200, width: "100%" }} />
         <Text>First</Text>

@@ -1,20 +1,21 @@
-import { Box, Button, Container, Flex, Text } from "@theme-ui/components";
+import { Box, Button, Container, Grid, Text } from "@theme-ui/components";
 import React from "react";
 
 export const MainSection = () => {
   return (
-    <Flex sx={{ mb: 6, justifyContent: "space-between" }}>
+    <Grid
+      sx={{ mb: 6, gridTemplateColumns: ["1fr", "1fr", "1fr 1fr", "1fr 1fr"] }}
+    >
       <Container>
         <Text variant="styles.h2">Now they see it,</Text>
         <br />
         <Text variant="styles.h2">Now they don't</Text>
         <br />
         <br />
-        <Text>Poof Cash protects your privacy on Celo. Keep</Text>
-        <br />
-        <Text> your identity, balances, and transactions safe</Text>
-        <br />
-        <Text> from private eyes.</Text>
+        <Text>
+          Poof Cash protects your privacy on Celo. Keep your identity, balances,
+          and transactions safe from prying eyes.
+        </Text>
         <br />
         <br />
         <Button
@@ -26,7 +27,13 @@ export const MainSection = () => {
           Launch App
         </Button>
       </Container>
-      <Box sx={{ height: 300, width: 1000, bg: "grey" }} />
-    </Flex>
+      <Box
+        sx={{
+          height: 300,
+          width: 300,
+          bg: "grey",
+        }}
+      />
+    </Grid>
   );
 };

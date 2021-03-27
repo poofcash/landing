@@ -6,7 +6,7 @@ export default {
     8: "8px",
     px: "1px",
   },
-  breakpoints: ["640px", "768px", "1024px", "1280px"],
+  breakpoints: ["640px", "768px"],
   colors: {
     transparent: "transparent",
     black: "#000",
