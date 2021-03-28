@@ -14,10 +14,10 @@ export const Header = () => {
       <Flex sx={{ alignItems: "center" }}>
         <NavLink
           sx={{ display: ["none", "block"], fontWeight: "normal" }}
-          href="#about"
+          href="#quickstart"
           pr={4}
         >
-          About
+          Quickstart
         </NavLink>
         <NavLink
           sx={{ display: ["none", "block"], fontWeight: "normal" }}

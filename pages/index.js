@@ -1,7 +1,7 @@
 import { Container } from "@theme-ui/components";
 import { ThemeProvider } from "@theme-ui/theme-provider";
 import Head from "next/head";
-import { AboutSection } from "../components/AboutSection";
+import { QuickstartSection } from "../components/QuickstartSection";
 import { FAQSection } from "../components/FAQSection";
 import { Header } from "../components/Header";
 import { MagicSection } from "../components/MagicSection";
@@ -24,7 +24,7 @@ export default function Home() {
         <Container sx={{ mx: [2, 4], my: 4 }}>
           <Header />
           <MainSection />
-          <AboutSection />
+          <QuickstartSection />
           <MagicSection />
           <FAQSection />
         </Container>
