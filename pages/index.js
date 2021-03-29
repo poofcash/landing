@@ -5,7 +5,6 @@ import { QuickstartSection } from "../components/QuickstartSection";
 import { FAQSection } from "../components/FAQSection";
 import { Header } from "../components/Header";
 import { MagicSection } from "../components/MagicSection";
-import { MainSection } from "../components/MainSection";
 import theme from "../styles/theme";
 
 export default function Home() {
@@ -21,9 +20,8 @@ export default function Home() {
           />
         </Head>
 
-        <Container sx={{ mx: [2, 4], my: 4 }}>
+        <Container sx={{ mx: [2, "15%"], my: 4, width: "auto" }}>
           <Header />
-          <MainSection />
           <QuickstartSection />
           <MagicSection />
           <FAQSection />
