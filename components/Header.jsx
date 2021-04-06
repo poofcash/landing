@@ -1,12 +1,24 @@
 import React from "react";
-import { Box, Button, Container, Flex, Grid, NavLink, Text } from "theme-ui";
+import {
+  Box,
+  Button,
+  Container,
+  Flex,
+  Grid,
+  NavLink,
+  Text,
+  Image,
+} from "theme-ui";
 
 const Logo = () => {
   return (
     <Flex sx={{ display: "flex", alignItems: "center" }}>
       <img src="/icon.svg" />
-      <Text sx={{ height: "auto", fontWeight: "bold", marginLeft: "4px" }}>
-        Poof.cash
+      <Text
+        sx={{ height: "auto", fontWeight: "bold", marginLeft: "4px" }}
+        variant="logo"
+      >
+        poof
       </Text>
     </Flex>
   );
@@ -37,23 +49,33 @@ const Navbar = () => {
     <div ref={ref}>
       <Container sx={{ display: ["none", "block"] }}>
         <Flex sx={{ alignItems: "center" }}>
-          <NavLink sx={{ fontWeight: "normal" }} href="#quickstart" pr={4}>
+          <NavLink
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{ fontWeight: "normal" }}
+            href="https://discord.com/invite/UwAzkVYcJx"
+            pr={4}
+          >
             Discord
           </NavLink>
-          <NavLink sx={{ fontWeight: "normal" }} href="#magic" pr={4}>
+          <NavLink
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{ fontWeight: "normal" }}
+            href="https://twitter.com/PoofCash"
+            pr={4}
+          >
             Twitter
           </NavLink>
-          <NavLink sx={{ fontWeight: "normal" }} href="#faq" pr={4}>
+          <NavLink
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{ fontWeight: "normal" }}
+            href="https://docs.poof.cash/"
+            pr={4}
+          >
             FAQ
           </NavLink>
-          <Button
-            onClick={() => {
-              location.href = "https://app.poof.cash";
-            }}
-            variant="outline"
-          >
-            Launch App
-          </Button>
         </Flex>
       </Container>
       <Flex sx={{ justifyContent: "flex-end" }}>
@@ -101,17 +123,32 @@ const Navbar = () => {
               textAlign: "right",
             }}
           >
-            <NavLink sx={{ fontWeight: "normal" }} href="#quickstart">
-              Quickstart
+            <NavLink
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ fontWeight: "normal" }}
+              href="https://discord.com/invite/UwAzkVYcJx"
+              pr={4}
+            >
+              Discord
             </NavLink>
-            <NavLink sx={{ fontWeight: "normal" }} href="#magic">
-              The Magic
+            <NavLink
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ fontWeight: "normal" }}
+              href="https://twitter.com/PoofCash"
+              pr={4}
+            >
+              Twitter
             </NavLink>
-            <NavLink sx={{ fontWeight: "normal" }} href="#faq">
+            <NavLink
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ fontWeight: "normal" }}
+              href="https://docs.poof.cash/"
+              pr={4}
+            >
               FAQ
-            </NavLink>
-            <NavLink href={"https://app.poof.cash"} variant="outline">
-              Launch App
             </NavLink>
           </Flex>
         )}
@@ -123,12 +160,12 @@ const Navbar = () => {
 const Motto = () => {
   return (
     <Container>
-      <Text variant="styles.h2">Now they see it,</Text>
+      <Text variant="motto">Now they see it,</Text>
       <br />
-      <Text variant="styles.h2">Now they don't</Text>
+      <Text variant="motto">Now they don't</Text>
       <br />
       <br />
-      <Text>
+      <Text variant="subtitle">
         Poof Cash protects your privacy on Celo. Keep your identity, balances,
         and transactions safe from prying eyes.
       </Text>
@@ -138,7 +175,7 @@ const Motto = () => {
         onClick={() => {
           location.href = "https://app.poof.cash";
         }}
-        variant="outline"
+        variant="launch"
       >
         Launch App
       </Button>
@@ -148,14 +185,21 @@ const Motto = () => {
 
 const Illustration = () => {
   return (
-    <Box
+    <Flex
       sx={{
-        display: ["none", "block"],
-        height: 300,
-        width: 300,
-        bg: "grey",
+        gridRowStart: [3, 2],
+        gridColumnStart: [1, 2],
+        justifyContent: "center",
       }}
-    />
+    >
+      <Image
+        sx={{
+          borderRadius: "6px",
+          boxShadow: "4px 4px 4px #333333",
+        }}
+        src="/mobile.png"
+      />
+    </Flex>
   );
 };
 
@@ -164,7 +208,7 @@ export const Header = () => {
     <Grid
       sx={{
         gridTemplateColumns: "1fr auto",
-        rowGap: "8rem",
+        rowGap: ["4rem", "8rem"],
         justifyContent: "space-between",
         mb: 6,
       }}
