@@ -18,7 +18,13 @@ export default function Home() {
         </Head>
 
         <Container
-          sx={{ mx: [4, "15%"], my: 4, width: "auto", maxWidth: "80%" }}
+          sx={{
+            px: [4, "20%"],
+            py: 4,
+            width: "auto",
+            maxWidth: "100%",
+            overflowX: "hidden",
+          }}
         >
           <Header />
         </Container>

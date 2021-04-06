@@ -115,16 +115,16 @@ const Illustration = () => {
   return (
     <Flex
       sx={{
-        width: ["120%", "100%"],
-        marginTop: ["-64px", "0px"],
-        marginLeft: ["-8px", "0px"],
+        width: ["200%", "200%"],
+        marginTop: ["-180px", "-284px"],
+        marginLeft: ["-164px", "-100px"],
         gridRowStart: [3, 2],
         gridColumnStart: [1, 2],
         gridColumnEnd: [3, 2],
         justifyContent: "center",
       }}
     >
-      <Image sx={{ maxHeight: ["700px"] }} src="/mobile.png" />
+      <Image sx={{ maxHeight: ["800px", "1000px"] }} src="/mobile.png" />
     </Flex>
   );
 };
@@ -134,7 +134,7 @@ export const Header = () => {
     <Grid
       sx={{
         gridTemplateColumns: ["50% 50%"],
-        rowGap: ["8rem", "8rem"],
+        rowGap: ["8rem", "16rem"],
         justifyContent: "center",
         mb: 6,
       }}
