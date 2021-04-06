@@ -38,7 +38,13 @@ const Navbar = () => {
 
   return (
     <div ref={ref}>
-      <Flex sx={{ alignItems: "flex-end", marginTop: "4px" }}>
+      <Flex
+        sx={{
+          alignItems: "flex-end",
+          marginTop: "4px",
+          justifyContent: "flex-end",
+        }}
+      >
         <NavLink
           target="_blank"
           rel="noopener noreferrer"
@@ -86,8 +92,8 @@ const Motto = () => {
       <br />
       <Text sx={{ maxWidth: "200px" }} variant="subtitle">
         Poof Cash protects your privacy on Celo. <br />
-        Keep your identity, balances, and transactions <br />
-        safe from prying eyes.
+        Keep your identity, balances, and <br />
+        transactions safe from prying eyes.
       </Text>
       <br />
       <br />
@@ -128,7 +134,7 @@ export const Header = () => {
     <Grid
       sx={{
         gridTemplateColumns: ["50% 50%"],
-        rowGap: ["4rem", "8rem"],
+        rowGap: ["8rem", "8rem"],
         justifyContent: "center",
         mb: 6,
       }}
