@@ -97,16 +97,15 @@ const Motto = () => {
       </Text>
       <br />
       <br />
-      <a href="https://app.poof.cash">
-        <Button
-          onClick={() => {
-            location.href = "https://app.poof.cash";
-          }}
-          variant="launch"
-        >
-          Launch App
-        </Button>
-      </a>
+      <Button
+        sx={{ zIndex: 200 }}
+        onClick={() => {
+          location.href = "https://app.poof.cash";
+        }}
+        variant="launch"
+      >
+        Launch App
+      </Button>
     </Container>
   );
 };
@@ -122,6 +121,7 @@ const Illustration = () => {
         gridColumnStart: [1, 2],
         gridColumnEnd: [3, 2],
         justifyContent: "center",
+        zIndex: -1,
       }}
     >
       <Image sx={{ maxHeight: ["800px", "1000px"] }} src="/mobile.png" />
