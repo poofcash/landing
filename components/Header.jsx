@@ -187,18 +187,14 @@ const Illustration = () => {
   return (
     <Flex
       sx={{
+        marginTop: ["-16px", "0px"],
+        marginLeft: ["32px", "0px"],
         gridRowStart: [3, 2],
         gridColumnStart: [1, 2],
         justifyContent: "center",
       }}
     >
-      <Image
-        sx={{
-          borderRadius: "6px",
-          boxShadow: "4px 4px 4px #333333",
-        }}
-        src="/mobile.png"
-      />
+      <Image sx={{ maxHeight: "700px" }} src="/mobile.png" />
     </Flex>
   );
 };
@@ -209,7 +205,7 @@ export const Header = () => {
       sx={{
         gridTemplateColumns: "1fr auto",
         rowGap: ["4rem", "8rem"],
-        justifyContent: "space-between",
+        justifyContent: "center",
         mb: 6,
       }}
     >

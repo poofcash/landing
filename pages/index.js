@@ -17,7 +17,7 @@ export default function Home() {
           />
         </Head>
 
-        <Container sx={{ mx: [2, "15%"], my: 4, width: "auto" }}>
+        <Container sx={{ mx: [4, "15%"], my: 4, width: "auto" }}>
           <Header />
         </Container>
       </Container>
