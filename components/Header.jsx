@@ -83,6 +83,8 @@ const Motto = () => {
         gridRowStart: [2, 2],
         gridColumnStart: [1],
         gridColumnEnd: [3],
+        maxWidth: "368px",
+        margin: 0,
       }}
     >
       <Text variant="motto">Now they see it,</Text>
@@ -90,10 +92,9 @@ const Motto = () => {
       <Text variant="motto">Now they don't</Text>
       <br />
       <br />
-      <Text sx={{ maxWidth: "200px" }} variant="subtitle">
-        Poof Cash protects your privacy on Celo. <br />
-        Keep your identity, balances, and <br />
-        transactions safe from prying eyes.
+      <Text variant="subtitle">
+        Poof Cash protects your privacy on Celo. Keep your identity, balances,
+        and transactions safe from prying eyes.
       </Text>
       <br />
       <br />
