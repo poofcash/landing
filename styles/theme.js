@@ -150,6 +150,11 @@ export const preset = {
       color: "accent",
       cursor: "pointer",
       variant: "bold",
+      transition: "all 0.1s ease",
+      ":hover": {
+        border: "2px solid #A199FF",
+        bg: "#EFEEFF",
+      },
     },
     primary: {
       ":disabled": {

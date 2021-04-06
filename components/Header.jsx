@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Button,
-  Container,
-  Flex,
-  Grid,
-  NavLink,
-  Text,
-  Image,
-} from "theme-ui";
+import { Button, Container, Flex, Grid, Image, NavLink, Text } from "theme-ui";
 
 const Logo = () => {
   return (
@@ -48,7 +39,7 @@ const Navbar = () => {
   return (
     <div ref={ref}>
       <Container sx={{ display: ["none", "block"] }}>
-        <Flex sx={{ alignItems: "center" }}>
+        <Flex sx={{ alignItems: "center", justifyContent: "flex-end" }}>
           <NavLink
             target="_blank"
             rel="noopener noreferrer"
@@ -72,17 +63,20 @@ const Navbar = () => {
             rel="noopener noreferrer"
             sx={{ fontWeight: "normal" }}
             href="https://docs.poof.cash/"
-            pr={4}
           >
             FAQ
           </NavLink>
         </Flex>
       </Container>
-      <Flex sx={{ justifyContent: "flex-end" }}>
+      <Flex
+        sx={{
+          display: ["block", "none"],
+          justifyContent: "flex-end",
+        }}
+      >
         <Button
           title="Toggle Menu"
           sx={{
-            display: ["block", "none"],
             appearance: "none",
             width: 8,
             height: 8,
@@ -171,14 +165,16 @@ const Motto = () => {
       </Text>
       <br />
       <br />
-      <Button
-        onClick={() => {
-          location.href = "https://app.poof.cash";
-        }}
-        variant="launch"
-      >
-        Launch App
-      </Button>
+      <a href="https://app.poof.cash">
+        <Button
+          onClick={() => {
+            location.href = "https://app.poof.cash";
+          }}
+          variant="launch"
+        >
+          Launch App
+        </Button>
+      </a>
     </Container>
   );
 };
