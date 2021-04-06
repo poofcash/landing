@@ -84,9 +84,10 @@ const Motto = () => {
       <Text variant="motto">Now they don't</Text>
       <br />
       <br />
-      <Text variant="subtitle">
-        Poof Cash protects your privacy on Celo. Keep your identity, balances,
-        and transactions safe from prying eyes.
+      <Text sx={{ maxWidth: "200px" }} variant="subtitle">
+        Poof Cash protects your privacy on Celo. <br />
+        Keep your identity, balances, and transactions <br />
+        safe from prying eyes.
       </Text>
       <br />
       <br />
@@ -126,7 +127,7 @@ export const Header = () => {
   return (
     <Grid
       sx={{
-        gridTemplateColumns: "1fr auto",
+        gridTemplateColumns: ["50% 50%"],
         rowGap: ["4rem", "8rem"],
         justifyContent: "center",
         mb: 6,
