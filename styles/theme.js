@@ -1,4 +1,5 @@
 export const preset = {
+  breakpoints: ["2000px", "2000px"],
   colors: {
     text: "#333333",
     accent: "#7C71FD",
