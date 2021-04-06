@@ -108,7 +108,7 @@ const Illustration = () => {
   return (
     <Flex
       sx={{
-        marginTop: ["-16px", "0px"],
+        marginTop: ["-64px", "0px"],
         marginLeft: ["32px", "0px"],
         gridRowStart: [3, 2],
         gridColumnStart: [1, 2],
