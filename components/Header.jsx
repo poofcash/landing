@@ -47,111 +47,34 @@ const Navbar = () => {
 
   return (
     <div ref={ref}>
-      <Container sx={{ display: ["none", "block"] }}>
-        <Flex sx={{ alignItems: "center" }}>
-          <NavLink
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={{ fontWeight: "normal" }}
-            href="https://discord.com/invite/UwAzkVYcJx"
-            pr={4}
-          >
-            Discord
-          </NavLink>
-          <NavLink
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={{ fontWeight: "normal" }}
-            href="https://twitter.com/PoofCash"
-            pr={4}
-          >
-            Twitter
-          </NavLink>
-          <NavLink
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={{ fontWeight: "normal" }}
-            href="https://docs.poof.cash/"
-            pr={4}
-          >
-            FAQ
-          </NavLink>
-        </Flex>
-      </Container>
-      <Flex sx={{ justifyContent: "flex-end" }}>
-        <Button
-          title="Toggle Menu"
-          sx={{
-            display: ["block", "none"],
-            appearance: "none",
-            width: 8,
-            height: 8,
-            m: 0,
-            p: 1,
-            color: "inherit",
-            bg: "transparent",
-            border: 0,
-            ":focus": {
-              outline: "2px solid",
-            },
-            ":hover": {
-              color: "primary",
-            },
-          }}
-          onClick={() => setShowMenu(!showMenu)}
+      <Flex sx={{ alignItems: "flex-end", marginTop: "4px" }}>
+        <NavLink
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{ fontWeight: "normal" }}
+          href="https://discord.com/invite/UwAzkVYcJx"
+          pr={4}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="currentcolor"
-            viewBox="0 0 24 24"
-            sx={{
-              display: "block",
-              margin: 0,
-            }}
-          >
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-          </svg>
-        </Button>
-        {showMenu && (
-          <Flex
-            sx={{
-              flexDirection: "column",
-              position: "absolute",
-              top: "80px",
-              textAlign: "right",
-            }}
-          >
-            <NavLink
-              target="_blank"
-              rel="noopener noreferrer"
-              sx={{ fontWeight: "normal" }}
-              href="https://discord.com/invite/UwAzkVYcJx"
-              pr={4}
-            >
-              Discord
-            </NavLink>
-            <NavLink
-              target="_blank"
-              rel="noopener noreferrer"
-              sx={{ fontWeight: "normal" }}
-              href="https://twitter.com/PoofCash"
-              pr={4}
-            >
-              Twitter
-            </NavLink>
-            <NavLink
-              target="_blank"
-              rel="noopener noreferrer"
-              sx={{ fontWeight: "normal" }}
-              href="https://docs.poof.cash/"
-              pr={4}
-            >
-              FAQ
-            </NavLink>
-          </Flex>
-        )}
+          Discord
+        </NavLink>
+        <NavLink
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{ fontWeight: "normal" }}
+          href="https://twitter.com/PoofCash"
+          pr={4}
+        >
+          Twitter
+        </NavLink>
+        <NavLink
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{ fontWeight: "normal" }}
+          href="https://docs.poof.cash/"
+          pr={4}
+        >
+          FAQ
+        </NavLink>
       </Flex>
     </div>
   );
@@ -159,7 +82,13 @@ const Navbar = () => {
 
 const Motto = () => {
   return (
-    <Container>
+    <Container
+      sx={{
+        gridRowStart: [2, 2],
+        gridColumnStart: [1],
+        gridColumnEnd: [3],
+      }}
+    >
       <Text variant="motto">Now they see it,</Text>
       <br />
       <Text variant="motto">Now they don't</Text>
@@ -191,10 +120,11 @@ const Illustration = () => {
         marginLeft: ["32px", "0px"],
         gridRowStart: [3, 2],
         gridColumnStart: [1, 2],
+        gridColumnEnd: [3, 2],
         justifyContent: "center",
       }}
     >
-      <Image sx={{ maxHeight: "700px" }} src="/mobile.png" />
+      <Image sx={{ maxHeight: ["700px"] }} src="/mobile.png" />
     </Flex>
   );
 };
