@@ -62,7 +62,6 @@ const Navbar = () => {
           rel="noopener noreferrer"
           sx={{ fontWeight: "normal" }}
           href="https://docs.poof.cash/"
-          pr={4}
         >
           FAQ
         </NavLink>
