@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Box, Text, Flex, NavLink, Button, Container } from "theme-ui";
+import { Box, Button, Container, Flex, Grid, NavLink, Text } from "theme-ui";
 
 const Logo = () => {
   return <Text sx={{ height: "auto", fontWeight: "bold" }}>Poof.cash</Text>;
