@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Button,
-  Container,
-  Flex,
-  Grid,
-  NavLink,
-  Text,
-  Image,
-} from "theme-ui";
+import { Button, Container, Flex, Grid, Image, NavLink, Text } from "theme-ui";
 
 const Logo = () => {
   return (
@@ -100,14 +91,16 @@ const Motto = () => {
       </Text>
       <br />
       <br />
-      <Button
-        onClick={() => {
-          location.href = "https://app.poof.cash";
-        }}
-        variant="launch"
-      >
-        Launch App
-      </Button>
+      <a href="https://app.poof.cash">
+        <Button
+          onClick={() => {
+            location.href = "https://app.poof.cash";
+          }}
+          variant="launch"
+        >
+          Launch App
+        </Button>
+      </a>
     </Container>
   );
 };
