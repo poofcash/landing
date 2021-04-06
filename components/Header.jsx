@@ -2,7 +2,14 @@ import React from "react";
 import { Box, Button, Container, Flex, Grid, NavLink, Text } from "theme-ui";
 
 const Logo = () => {
-  return <Text sx={{ height: "auto", fontWeight: "bold" }}>Poof.cash</Text>;
+  return (
+    <Flex sx={{ display: "flex", alignItems: "center" }}>
+      <img src="/icon.svg" />
+      <Text sx={{ height: "auto", fontWeight: "bold", marginLeft: "4px" }}>
+        Poof.cash
+      </Text>
+    </Flex>
+  );
 };
 
 const useClickOutside = (onClickOutside) => {
@@ -31,10 +38,10 @@ const Navbar = () => {
       <Container sx={{ display: ["none", "block"] }}>
         <Flex sx={{ alignItems: "center" }}>
           <NavLink sx={{ fontWeight: "normal" }} href="#quickstart" pr={4}>
-            Quickstart
+            Discord
           </NavLink>
           <NavLink sx={{ fontWeight: "normal" }} href="#magic" pr={4}>
-            The Magic
+            Twitter
           </NavLink>
           <NavLink sx={{ fontWeight: "normal" }} href="#faq" pr={4}>
             FAQ
