@@ -83,7 +83,7 @@ const Motto = () => {
         gridRowStart: [2, 2],
         gridColumnStart: [1],
         gridColumnEnd: [3],
-        maxWidth: "368px",
+        maxWidth: "400px",
         margin: 0,
       }}
     >

@@ -19,7 +19,7 @@ export default function Home() {
 
         <Container
           sx={{
-            px: [4, "20%"],
+            px: [4, "15%"],
             py: 4,
             width: "auto",
             maxWidth: "100%",
