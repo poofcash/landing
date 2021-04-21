@@ -62,12 +62,14 @@ export const FAQSection = () => {
             </Text>
           </Container>
           <Container>
-            <Text variant="styles.h5">Does app.poof.cash collect data?</Text>
+            <Text variant="styles.h5">
+              Does The Poof.cash interface collect data?
+            </Text>
             <br />
             <Text>
-              No, app.poof.cash does not collect any user data. It is a web app
-              that only makes network requests for interacting with smart
-              contracts and relayers.
+              No, the Poof.cash interface does not collect any user data. It is
+              a web app that only makes network requests for interacting with
+              smart contracts and relayers.
             </Text>
           </Container>
         </Grid>
