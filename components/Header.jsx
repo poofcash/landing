@@ -49,7 +49,7 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
           sx={{ fontWeight: "normal" }}
-          href="https://discord.com/invite/UwAzkVYcJx"
+          href="https://discord.gg/xgEbWkGgu7"
           pr={4}
         >
           Discord
