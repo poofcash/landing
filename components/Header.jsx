@@ -67,9 +67,9 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
           sx={{ fontWeight: "normal" }}
-          href="https://docs.poof.cash/faq"
+          href="https://docs.poof.cash"
         >
-          FAQ
+          Docs
         </NavLink>
       </Flex>
     </div>
