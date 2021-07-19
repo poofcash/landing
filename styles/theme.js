@@ -1,233 +1,205 @@
+import { Flex } from "theme-ui";
+
 export const preset = {
-  breakpoints: ["1080px", "1080px"],
-  colors: {
-    text: "#333333",
-    accent: "#7C71FD",
-    background: "#fff",
-    primary: "#499EE9",
-    secondary: "#30c",
-    muted: "#f6f6f9",
-    gray: "#bababa",
-    darkgray: "#8d8d8d",
-    highlight: "hsla(205, 100%, 40%, 0.125)",
-  },
-  fonts: {
-    regular: "Regular",
-    bold: "Bold",
-    demiBold: "DemiBold",
-    medium: "Medium",
-  },
-  fontSizes: [12, 14, 16, 18, 20, 24, 28, 32, 48, 64, 96],
-  lineHeights: {
-    body: 1.5,
-    heading: 1.25,
-  },
-  space: [0, 4, 8, 16, 24, 32, 48, 64],
-  letterSpacings: {
-    small: "-0.05em",
-  },
-  sizes: {
-    avatar: 48,
-  },
-  shadows: {
-    card: "0 0 4px rgba(0, 0, 0, .125)",
-  },
-  text: {
-    title: {
-      fontFamily: "Medium",
-      fontSize: [28],
-      lineHeight: "42px",
-    },
-    logo: {
-      fontFamily: "DemiBold",
-      color: "accent",
-      fontSize: [20],
-      lineHeight: "28px",
-      letterSpacing: "small",
-    },
-    wallet: {
-      fontFamily: "DemiBold",
-      color: "accent",
-      fontSize: [12],
-      lineHeight: "16px",
-    },
-    regular: {
-      fontFamily: "Regular",
-      fontSize: [18],
-      lineHeight: "22px",
-      color: "text",
-    },
-    regularGray: {
-      fontFamily: "Regular",
-      fontSize: [18],
-      lineHeight: "22px",
-      color: "darkgray",
-    },
-    bold: {
-      fontFamily: "Bold",
-      fontSize: 18,
-      lineHeight: "20px",
-      color: "text",
-    },
-    form: {
-      fontStyle: "Regular",
-      fontSize: [14],
-      lineHeight: "16px",
-      color: "darkgray",
-    },
-    subtitle: {
-      fontStyle: "DemiBold",
-      fontSize: 20,
-      lineHeight: "24px",
-      letterSpacing: "-0.01rem",
-      color: "text",
-    },
-    tableHeader: {
-      color: "accent",
-      fontFamily: "Medium",
-      fontSize: [14],
-      lineHeight: "20px",
-    },
-    summaryTitle: {
-      color: "accent",
-      fontFamily: "Medium",
-      fontSize: [14],
-      lineHeight: "20px",
-    },
-    largeNumber: {
-      fontFamily: "DemiBold",
-      fontSize: 24,
-      lineHeight: "20px",
-      color: "#333333",
-    },
-    motto: {
-      fontStyle: "DemiBold",
-      color: "accent",
-      fontFamily: "Medium",
-      fontSize: [40, 54],
-      lineHeight: ["48px", "60px"],
-    },
-  },
-  variants: {
-    avatar: {
-      width: "avatar",
-      height: "avatar",
-      borderRadius: "circle",
-    },
-    card: {
-      p: 2,
-      bg: "background",
-      boxShadow: "card",
-    },
-    link: {
-      color: "primary",
-      textDecoration: "none",
-    },
-    nav: {
-      fontSize: 1,
-      fontWeight: "bold",
-      display: "inline-block",
-      p: 2,
-      color: "inherit",
-      textDecoration: "none",
-      ":hover,:focus,.active": {
-        color: "primary",
-      },
-    },
-  },
-  select: {
-    borderColor: "gray",
-    borderWidth: "1.5px",
-  },
-  input: {
-    borderColor: "gray",
-    borderWidth: "1.5px",
-  },
-  buttons: {
-    launch: {
-      border: "2px solid #7C71FD",
-      borderRadius: "6px",
-      bg: "white",
-      color: "accent",
-      cursor: "pointer",
-      variant: "bold",
-      transition: "all 0.1s ease",
-      ":hover": {
-        border: "2px solid #A199FF",
-        bg: "#EFEEFF",
-      },
-    },
-    primary: {
-      ":disabled": {
-        color: "gray",
-      },
-      fontFamily: "Bold",
-      fontSize: 18,
-      lineHeight: "20px",
-      cursor: "pointer",
-      variant: "bold",
-      borderRadius: "32px",
-      height: "48px",
-      color: "#F1F4F4",
-      bg: "#333333",
-    },
-    secondary: {
-      ":disabled": {
-        color: " gray",
-      },
-      fontFamily: "Bold",
-      fontSize: 18,
-      lineHeight: "20px",
-      variant: "buttons.primary",
-      color: "#333333",
-      bg: "#F1F4F4",
-    },
-    done: {
-      variant: "buttons.secondary",
-      color: "accent",
-    },
-    switcher: {
-      bg: "transparent",
-      fontFamily: "DemiBold",
-      fontSize: 20,
-      lineHeight: "16px",
-      letterSpacing: "-0.01rem",
-      borderRadius: 0,
-      borderBottom: "3px solid transparent",
-      color: "gray",
-      ":focus": {
-        outline: "none",
-      },
-      cursor: "pointer",
-      px: 0,
-      mr: 3,
-      mt: 2,
-    },
-    switcherSelected: {
-      variant: "buttons.switcher",
-      borderBottom: "3px solid black",
-      color: "text",
-    },
-  },
-  styles: {
-    root: {
-      fontFamily: "Regular",
-      lineHeight: "body",
-    },
-  },
-  cards: {
-    primary: {
-      padding: 2,
-      borderRadius: 4,
-      boxShadow: "0 0 8px rgba(0, 0, 0, 0.125)",
-    },
-    compact: {
-      padding: 1,
-      borderRadius: 2,
-      border: "1px solid",
-      borderColor: "muted",
-    },
-  },
+	breakpoints: [
+		'500px', '800px', '1600px', '4000px',
+	],
+	space: [
+		0,
+		8,
+		16,
+		24,
+		32,
+		64,
+		128,
+		256,
+	],
+	sizes: ['60%', '85%', '90%', '95%'],
+	fonts: {
+		body: 'Regular, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+		heading: 'inherit',
+		display: 'DemiBold',
+		button: 'Medium',
+		monospace: '"Roboto Mono", monospace',
+	},
+	fontSizes: [
+		14,
+		16,
+		18,
+		24,
+		36,
+		48,
+		64,
+		72,
+	],
+	fontWeights: {
+		body: 500,
+		heading: 500,
+		display: 600,
+		bold: 700
+	},
+	lineHeights: {
+		body: 1.6,
+		heading: 1.125,
+		display: 1.2,
+		button: '0px',
+	},
+	letterSpacing: {
+		display: '-0.02em',
+		button: '0.2em',
+
+	},
+	colors: {
+		text: '#363945',
+		background: '#fff',
+		primary: '#7c71fc',
+		secondary: '#5352FC',
+		muted: '#ece6fe'
+	},
+	styles: {
+		root: {
+			fontFamily: 'body',
+			lineHeight: 'body',
+			fontWeight: 'body'
+		},
+		p: {
+			color: 'text',
+			fontFamily: 'body',
+			fontWeight: 'body',
+			lineHeight: 'body'
+		},
+		a: {
+			fontFamily: 'button',
+			lineHeight: 'body',
+			fontWeight: 'body',
+			textDecoration: 'none',
+			color: 'text',
+			fontSize: 2,
+			'&:hover': {
+				color: 'primary',
+				borderBottom: '2px solid #7c71fc',
+		 	}
+		},
+		img: {
+			maxWidth: '100%'
+		}
+	},
+	links: {
+		footer: {
+			fontFamily: 'body',
+			fontWeight: 'body',
+			lineHeight: 'body',
+			letterSpacing: 'body',
+			textDecoration: 'none',
+			color: 'text',
+			fontSize: 2,
+			'&:hover': {
+				color: 'primary',
+		 	}
+		}
+	},
+	text: {
+		default: {
+			fontFamily: 'body',
+			fontWeight: 'body',
+			lineHeight: 'body',
+			letterSpacing: 'body',
+			color: 'text',
+			fontSize: 2,
+		},
+		display: {
+			fontFamily: 'display',
+			fontWeight: 'display',
+			lineHeight: 'display',
+			letterSpacing: 'display',
+			color: 'text',
+			fontSize: [4, 5, 6, 6]
+		},
+		title: {
+			fontFamily: 'display',
+			fontWeight: 'display',
+			lineHeight: 'display',
+			letterSpacing: 'display',
+			color: 'text',
+			fontSize: 4
+		},
+		subtitle: {
+			fontFamily: 'body',
+			fontWeight: 'body',
+			lineHeight: 'body',
+			letterSpacing: 'display',
+			color: 'primary',
+			fontSize: 2
+		},
+		h3: {
+			fontFamily: 'display',
+			fontWeight: 'bold',
+			lineHeight: 'body',
+			letterSpacing: 'display',
+			color: 'text',
+			fontSize: 2
+		},
+		logo: {
+			fontFamily: 'display',
+			fontWeight: 'bold',
+			lineHeight: 'body',
+			letterSpacing: '-0.05em',
+			color: 'primary',
+			fontSize: '24px'
+		}
+	},
+	buttons: {
+		primary: {
+			fontFamily: 'medium',
+			lineHeight: 'button',
+			letterSpacing: 'button',
+			height: '42px',
+			maxWidth: '160px',
+		  	color: 'white',
+		  	bg: 'primary',
+			cursor: 'pointer',
+		  	'&:hover': {
+				bg: 'secondary',
+		 	}
+		},
+		secondary: {
+			fontFamily: 'medium',
+			lineHeight: 'button',
+			letterSpacing: 'button',
+			border: '2px solid #7C71FC',
+			boxSizing: 'border-box',
+			borderRadius: '4px',
+			height: '42px',
+			maxWidth: '160px',
+		  	color: 'primary',
+			bg: 'white',
+			cursor: 'pointer',
+		  	'&:hover': {
+				bg: 'muted',
+		 	}
+		},
+		small: {
+			maxWidth: '56px',
+			width: '56px',
+			height: '36px',
+			lineHeight: '0px',
+			padding: 0,
+			textAlign: 'center',
+		},
+		round: {
+			maxWidth: '160px',
+			width: '160px',
+			height: '42px',
+			borderRadius: '32px',
+			lineHeight: '0px',
+			padding: 0,
+			textAlign: 'center',
+			cursor: 'pointer',
+		  	'&:hover': {
+				bg: 'secondary',
+		 	}
+		}
+	  }
 };
 
 export default preset;

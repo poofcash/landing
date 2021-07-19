@@ -1,0 +1,18 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="62" y="59" width="84" height="106" rx="2" fill="#ECE6FE"/>
+<mask id="path-2-inside-1" fill="white">
+<rect x="54" y="50" width="84" height="106" rx="2"/>
+</mask>
+<rect x="54" y="50" width="84" height="106" rx="2" stroke="#7C71FC" stroke-width="5" mask="url(#path-2-inside-1)"/>
+<path d="M113 120C111 124 102.5 128 96 128C89.5 128 81 124 79 120" stroke="#7C71FC" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M96 131V138" stroke="#7C71FC" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="1.25" y1="-1.25" x2="3.75" y2="-1.25" transform="matrix(0.8 0.6 0.6 -0.8 115 124)" stroke="#7C71FC" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="76.75" y1="125.75" x2="74.75" y2="127.25" stroke="#7C71FC" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M109 129L113.637 134.244" stroke="#7C71FC" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="1.25" y1="-1.25" x2="3.22214" y2="-1.25" transform="matrix(0.447214 0.894427 0.894427 -0.447214 103 130)" stroke="#7C71FC" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="89.559" y1="131.677" x2="88.677" y2="133.441" stroke="#7C71FC" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M83.3213 129L79.0001 134.507" stroke="#7C71FC" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M71 72H120" stroke="#7C71FC" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M71 84H103" stroke="#7C71FC" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M71 96H111" stroke="#7C71FC" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
