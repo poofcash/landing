@@ -21,8 +21,8 @@ export const Footer = () => {
                         <Link variant='footer' href="https://rcelo.studio/" target="_blank" mr="3">
                             rCelo Studio
                         </Link>
-                        <Link variant='footer' href="https://alfajores.poof.cash" target="_blank" mr="3">
-                            Testnet
+                        <Link variant='footer' href="https://stats.poof.cash/" target="_blank" mr="3">
+                            Stats
                         </Link>
                         <Link variant='footer' href="https://romulus.page/romulus" target="_blank" mr="3">
                             Governance
@@ -30,10 +30,6 @@ export const Footer = () => {
                         <Link variant='footer' href="https://deploy.poof.cash" target="_blank" mr="3">
                             Deployment
                         </Link>
-                        <Link variant='footer' href="https://alfajores.poof.cash" target="_blank" mr="3">
-                            Testnet
-                        </Link>
-
                         <Link variant='footer' href="https://docs.poof.cash/" target="_blank" mr="3">
                             Docs
                         </Link>
