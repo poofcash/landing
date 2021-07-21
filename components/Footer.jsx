@@ -9,7 +9,7 @@ export const Footer = () => {
                     <Heading as="h3" sx={{ variant: 'text.logo', mb: 2 }}>poof</Heading>
                     <Text sx={{ width: ['100%', '60%'] }}>Making it possible to have privacy in this public world, with a little bit of magic.</Text>
 
-                    <Text mt="3">Copyright © Poof 2021. All rights reserved</Text>
+                    <Text mt="3">Copyright © Poof Labs 2021. All rights reserved</Text>
                     <Text>Created by Brian Li. Designed by dang.</Text>
                 </Flex>
                 <Flex sx={{ width: ['100%', '40%'], flexDirection: 'row', justifyContent: 'flex-start' }}>
