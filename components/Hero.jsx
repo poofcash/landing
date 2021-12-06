@@ -28,7 +28,7 @@ export const Hero = () => {
           <Text>
             Poof is a decentralized, private DeFi protocol. Users can privately
             lend, borrow, send, and request crypto. Now available on Celo,
-            Polygon, Avalanche Fantom and Ethereum.
+            Polygon, Avalanche, Fantom and Ethereum.
           </Text>
         </Box>
         <Button
