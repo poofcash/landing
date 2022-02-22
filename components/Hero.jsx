@@ -31,14 +31,9 @@ export const Hero = () => {
             Polygon, Avalanche, Fantom and Ethereum.
           </Text>
         </Box>
-        <Button
-          onClick={() => {
-            window.open("https://app.poof.cash", "_blank");
-          }}
-          mt="4"
-        >
-          Launch App
-        </Button>
+        <a href="https://app.poof.cash">
+          <Button mt="4">Launch App</Button>
+        </a>
       </Box>
       <Image
         src="images/Main.svg"

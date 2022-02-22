@@ -98,15 +98,11 @@ const Motto = () => {
       </Text>
       <br />
       <br />
-      <Button
-        sx={{ zIndex: 200 }}
-        onClick={() => {
-          location.href = "https://app.poof.cash";
-        }}
-        variant="launch"
-      >
-        Launch App
-      </Button>
+      <a href="https://app.poof.cash">
+        <Button sx={{ zIndex: 200 }} variant="launch">
+          Launch App
+        </Button>
+      </a>
     </Container>
   );
 };
