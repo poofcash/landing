@@ -1,13 +1,13 @@
 import { Box, Heading, Text, Flex, Button, Image } from "@theme-ui/components";
 import React from "react";
-import LeaveModal from "./LeaveModal";
+// import LeaveModal from "./LeaveModal";
 
 export const Hero = () => {
-  const [leaveModalOpen, setLeaveModalOpen] = React.useState(false);
+  // const [leaveModalOpen, setLeaveModalOpen] = React.useState(false);
 
   return (
     <>
-      <LeaveModal open={leaveModalOpen} setOpen={setLeaveModalOpen} />
+      {/* <LeaveModal open={leaveModalOpen} setOpen={setLeaveModalOpen} /> */}
       <Flex
         sx={{
           mt: [0, 2, 5, 5],
@@ -27,9 +27,9 @@ export const Hero = () => {
               privately lend, borrow, send, and request crypto.
             </Text>
           </Box>
-          <Button mt="4" onClick={() => setLeaveModalOpen(true)}>
-            Launch App
-          </Button>
+          <a href="https://app.poof.cash">
+            <Button mt="4"> setLeaveModalOpen(true)}> Launch App</Button>
+          </a>
         </Box>
         <Image
           src="images/Main.svg"

@@ -1,9 +1,7 @@
 import { Container, Image, Flex, Link } from "@theme-ui/components";
 import React from "react";
-import LeaveModal from "./LeaveModal";
 
 export const Nav = () => {
-  const [leaveModalOpen, setLeaveModalOpen] = React.useState(false);
   return (
     <Container
       sx={{
@@ -13,7 +11,6 @@ export const Nav = () => {
         bg: "white",
       }}
     >
-      <LeaveModal open={leaveModalOpen} setOpen={setLeaveModalOpen} />
       <Flex
         sx={{
           justifyContent: "space-between",
