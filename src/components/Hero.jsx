@@ -28,7 +28,7 @@ export const Hero = () => {
             </Text>
           </Box>
           <a href="https://app.poof.cash">
-            <Button mt="4"> setLeaveModalOpen(true)}> Launch App</Button>
+            <Button mt="4"> Launch App</Button>
           </a>
         </Box>
         <Image
