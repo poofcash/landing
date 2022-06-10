@@ -1,12 +1,4 @@
-import {
-  Box,
-  Container,
-  Heading,
-  Text,
-  Flex,
-  Button,
-  Image,
-} from "@theme-ui/components";
+import { Box, Heading, Text, Flex, Button, Image } from "@theme-ui/components";
 import React from "react";
 
 export const Hero = () => {

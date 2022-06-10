@@ -1,11 +1,4 @@
-import {
-  Box,
-  Container,
-  Image,
-  Flex,
-  Link,
-  Button,
-} from "@theme-ui/components";
+import { Container, Image, Flex, Link, Button } from "@theme-ui/components";
 import React from "react";
 
 export const Nav = () => {
@@ -67,4 +60,3 @@ export const Nav = () => {
     </Container>
   );
 };
-
