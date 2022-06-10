@@ -31,3 +31,7 @@ body {
   src: local("Articulat CF"), url(fonts/Medium.otf) format("opentype");
   font-weight: 500;
 }
+
+a {
+  text-decoration: none;
+}

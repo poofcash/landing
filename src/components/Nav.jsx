@@ -1,7 +1,9 @@
-import { Container, Image, Flex, Link, Button } from "@theme-ui/components";
+import { Container, Image, Flex, Link } from "@theme-ui/components";
 import React from "react";
+import LeaveModal from "./LeaveModal";
 
 export const Nav = () => {
+  const [leaveModalOpen, setLeaveModalOpen] = React.useState(false);
   return (
     <Container
       sx={{
@@ -11,6 +13,7 @@ export const Nav = () => {
         bg: "white",
       }}
     >
+      <LeaveModal open={leaveModalOpen} setOpen={setLeaveModalOpen} />
       <Flex
         sx={{
           justifyContent: "space-between",
@@ -39,22 +42,6 @@ export const Nav = () => {
           <Link href="https://docs.poof.cash/" target="_blank" mr="3">
             Docs
           </Link>
-          <Button
-            variant="small"
-            sx={{ display: ["block", "block", "none"], textAlign: "center" }}
-            onClick={() => {
-              window.open("https://app.poof.cash", "_blank");
-            }}
-          >
-            App
-          </Button>
-          <a href="https://app.poof.cash">
-            <Button
-              sx={{ display: ["none", "none", "block"], textAlign: "center" }}
-            >
-              Launch App
-            </Button>
-          </a>
         </Flex>
       </Flex>
     </Container>
