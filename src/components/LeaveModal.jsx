@@ -33,8 +33,8 @@ export default function LeaveModal({ open, setOpen }) {
         </Text>
         <Text sx={{ display: "block" }} mb={4}>
           This redirect takes you to a community deployed and maintained
-          instance of the open source Aave front end, hosted and served on the
-          distributed, peer-to-peer file network known as the Interplanetary
+          instance of the open source Poof.cash front end, hosted and served on
+          the distributed, peer-to-peer file network known as the Interplanetary
           File System (IPFS).
         </Text>
         <Flex sx={{ justifyContent: "center" }}>
